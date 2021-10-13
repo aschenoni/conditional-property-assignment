@@ -33,7 +33,7 @@ In the case where `someCondition` is `false`, the `&&` short-circuits and the ex
 
 
 ## Definition
-This proposal introduces a new conditional assignment operator. There are currently multiple possible syntaxes under consideration:
+This proposal introduces a new conditional assignment operator within an object. There are currently multiple possible syntaxes under consideration:
 
 
 ### 1. Syntax `key ?<expression>: value`
