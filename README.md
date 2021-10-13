@@ -26,7 +26,9 @@ let objectWithProperties = {
   ...(someCondition && { propC: 'propCValue' })
 };
 ```
+
 In the case where `someCondition` is `true`, the key `propC` is added to `objectWithProperties` with a value `propCValue`. 
+
 In the case where `someCondition` is `false`, the `&&` short-circutes and the expression is evaluated as `...(false)` - which means nothing is assigned.
 
 
