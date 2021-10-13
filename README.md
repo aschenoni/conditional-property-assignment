@@ -33,7 +33,10 @@ In the case where `someCondition` is `false`, the `&&` short-circuits and the ex
 
 
 ## Definition
-This proposal introduces a new conditional assignment operator `?():` which evaluates a condition in parenthesis to determine whether to assign a property to the object.
+This proposal introduces a new conditional assignment operator. There are currently multiple possible syntaxes under consideration:
+
+
+### 1. Syntax `key ?<expression>: value`
 
 ```js
 let objectWithPropertyAssigned = {
@@ -49,4 +52,7 @@ let emptyObject = {
 console.log(emptyObject); // {}
 ```
 
+### 2. Syntax `expression && key: value`
+
+### 3. Syntax `expression ?? key: value`
 ## Examples
